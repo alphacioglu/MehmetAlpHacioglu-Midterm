@@ -30,3 +30,20 @@ async function getBooks(){
         }
         getBooks();
         console.log("This is fetch api example")
+
+
+        
+const menuIcon = document.querySelector('#menuIcon');
+const menu = document.querySelector('#menu');
+
+menuIcon.addEventListener('click', function() {
+    menu.classList.toggle('active');
+
+    if (menu.classList.contains('active')) {
+        this.classList.remove('fa-bars');
+        this.classList.add('fa-times');
+    } else {
+        this.classList.remove('fa-times');
+        this.classList.add('fa-bars');
+    }
+});        
